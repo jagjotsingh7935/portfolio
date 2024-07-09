@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form and Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #c5a8ea, #ded0f0);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section h2,
+        .contact-section p {
+            margin: 10px;
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-form input[type="checkbox"] {
+            width: auto;
+        }
+
+      
+
+        .contact-form button.submit-btn {
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 7px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        .contact-form button.submit-btn:hover {
+            background-color: #4a148c;
+        }
+
+        .footer {
+            background-color: #ded0f0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="contact-section">
+            <h2>Let's Start A Project</h2>
+            <p>Drop A Mail Here</p>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mqazkogr" method="post">
+                    <div class="form-group">
+                        <label for="firstName"><b>Your Name</b></label>
+                        <div class="name-field">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                        </div> <br>
+                        <div class="name-field">
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><b>Your Email</b></label>
+                        <input type="email" id="email" name="email" placeholder="e.g. abc@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><b>Phone</b></label>
+                        <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><b>Message(What Type of work You Want...)</b></label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                   
+                    <button type="submit" class="submit-btn">Submit Form</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

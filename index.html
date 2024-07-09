@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Porfolio Website Design | Jagjot Singh</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Full Stack Web Developer</a>
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#review">Contact Us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars-staggered responsive_icon"></i>
+        </nav>
+    </header>
+    <!-- header section end -->
+    <main class="hero container" id="home">
+        <div class="clr-shadow clr-shadow-one"></div>
+        <div class="clr-shadow clr-shadow-two"></div>
+        <div class="clr-shadow clr-shadow-three"></div>
+        <section class="row">
+            <div class="col">
+                <p class="sub-heading">Hi, <span class="img"><img src="asset/hi.png"></span> i'm <span
+                        class="typing"></span></p>
+                <h1 class="heading-one"> <span>Full</span> <span>Stack</span> Web Developer, <br>website designer, <br>
+                </h1>
+                <p class="about-hero">Hello, I'm Full Stack Web Developer,specializing in creating and
+                    <br>
+                    handling backend of websites, enhancing user experiences
+                </p>
+                <div class="hero_btn">
+                    <button class="btn-larger btn" onclick="myContact()"><i class="fa-regular fa-envelope"></i> hire
+                        me</button>
+                    <button class="btn-larger btn" onclick="showPortfolio()">Resume</button>
+                </div>
+            </div>
+            <div class="col">
+                <figure class="hero-img"><img src="asset/hero_img.png" alt=""></figure>
+                <img src="asset/html.png" alt="" class="small-img html">
+                <img src="asset/javascript.png" alt="" class="small-img javascript">
+                <img src="asset/css.png" alt="" class="small-img css">
+                <img src="asset/java.png" alt="" class="small-img java">
+                <div class="social-icon">
+                    <a href="https://wa.link/562kv6" target="_parent"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/jot_2287/" target="_parent"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/jagjotsingh7935" target="_parent"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jagjot-singh-5799ba224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_parent"><i class="fa-brands fa-linkedin-in"></i></a>
+
+        </section>
+
+    </main>
+  
+    <!-- about section start -->
+    <section class="container about" id="about">
+        <div class="clr-shadow clr-shadow-three"></div>
+        <div class="row">
+            <div class="col hero-image">
+                <figure><img src="asset/hero_img.png" alt="About Us Hero Image"></figure>
+            </div>
+            <div class="col">
+                <p class="sub-heading">about me</p>
+                <h2 class="heading-two">more than 5+ year designing <br> experienced</h2>
+                <p class="about-text">Hello! I'm Jagjot Singh, a passionate and dedicated front-end web developer with a
+                    strong foundation in creating visually appealing and user-friendly websites. Currently, I am pursuing my
+                    studies in Bachelor's of Technology (Information Technology) at Guru Nanak Dev Engineering College, Ludhiana where I have honed my skills in web development and design.
+                </p>
+                <button class="btn" onclick="myAbout()">about me</button>
+                <div class="my-skills">
+                    <h3 class="heading">my skills</h3>
+                    <div class="skill-container">
+                        <img src="asset/html.png" alt="">
+                        <img src="asset/css.png" alt="">
+                        <img src="asset/javascript.png" alt="">
+                        <img src="asset/java.png" alt="">
+                        <img src="asset/nodejs.png" alt="">
+                        <img src="asset/react.png" alt="">
+                        <img src="asset/mongoDb.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- service section start -->
+    <section class="container service" id="service">
+        <div class="section-heading">
+            <p class="sub-heading">our experties</p>
+            <h2 class="heading-two">awsome service for you</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <figure class="icon"><img src="asset/design.png" alt=""></figure>
+                <h3 class="heading-three">graphic design</h3>
+                <p class="about-service">Professional graphic design services to create visually stunning and impactful designs for your brand.</p>
+                <a href="index.html">read more</a>
+            </div>
+            <div class="col">
+                <figure class="icon"><img src="asset/website.png" alt=""></figure>
+                <h3 class="heading-three">Website design</h3>
+                <p class="about-service">Professional website design services to build visually appealing and user-friendly websites that elevate your online presence.</p>
+                <a href="index.html">read more</a>
+            </div>
+            <div class="col">
+                <figure class="icon"><img src="asset/backend.png" alt=""></figure>
+                <h3 class="heading-three">Backend </h3>
+                <p class="about-service">Specialized backend design services to develop robust, scalable, and efficient server-side applications for seamless functionality.</p>
+                <a href="index.html">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section start -->
+    <section class="container portfolio" id="portfolio">
+        <div class="clr-shadow clr-shadow-two"></div>
+        <div class="clr-shadow clr-shadow-three"></div>
+        <div class="section-heading-two">
+            <div class="section-text">
+                <p class="sub-heading">My Projects</p>
+                <h2 class="heading-two">A Glimpse at My Work</h2>
+            </div>
+        </div>
+        <div class="grid-row">
+            <figure class="col" data-item="project_1"><img src="asset/project_1.png" alt="Project 1">
+                <br>
+                <h1>Weather App</h1><br>
+                <p>I developed this Weather App using JavaScript, HTML, and CSS to provide real-time weather updates for
+                    any location worldwide. By simply entering the name of a city, the app fetches current weather data,
+                    including temperature, humidity, and wind speed. The user-friendly interface displays the
+                    information with beautiful icons representing different weather conditions. With smooth animations
+                    and an aesthetically pleasing design, the Weather App makes checking the weather both informative
+                    and visually enjoyable. Whether you're planning a trip or just curious about the weather, this app
+                    has you covered.</p> <br>
+                <button onclick="myProject1()">Visit</button>
+            </figure>
+            <figure class="col" data-item="project_2"><img src="asset/project_2.png" alt="Project 2">
+                <br>
+                <h1>Temperature Converter</h1> <br>
+                <p>I created this Temperature Converter using HTML, CSS, and JavaScript to easily convert temperatures
+                    between Celsius, Fahrenheit, and Kelvin. The intuitive interface allows users to input a temperature
+                    value in one unit and instantly see the equivalent values in the other units. The app features
+                    smooth animations and a clean, responsive design, making it accessible on any device. Whether you
+                    need to convert temperatures for cooking, science projects, or travel plans, this converter provides
+                    a quick and accurate solution. With its simple yet effective functionality, the Temperature
+                    Converter is a handy tool for everyday use.</p> <br>
+                <button onclick="myProject2()">Visit</button>
+            </figure>
+            <figure class="col" data-item="project_3"><img src="asset/project_3.png" alt="Project 3">
+                <br>
+                <h1>Dice Roll Game</h1><br>
+                <p>I developed a Dice Roll Game using HTML, CSS, and JavaScript that brings fun and competition to your
+                    browser. This game features two players who take turns rolling the dice, with a GIF animation
+                    enhancing the excitement while the dice are in motion. After each roll, the total score for both
+                    players is calculated, and the player with the highest score wins the game. The interface is
+                    designed to be visually appealing and easy to use, ensuring an engaging experience for players of
+                    all ages. <br> The Dice Roll Game is a perfect way to enjoy a quick and entertaining break with
+                    friends
+                    or family.</p><br>
+                <button onclick="myProject3() ">Visit</button>
+            </figure>
+            <figure class="col" data-item="project_4"><img src="asset/project_4.png" alt="Project 4">
+                <br>
+                <h1>Password Strength Checker</h1><br>
+                <p>I created a Password Strength Checker using HTML, CSS, and JavaScript to help users create secure
+                    passwords. This tool evaluates the strength of a password in real-time as it is being entered,
+                    without needing to click any buttons. It dynamically updates to show whether the password is weak,
+                    medium, or strong based on criteria such as length, the inclusion of numbers, uppercase and
+                    lowercase letters, and special characters. The user interface is designed to be intuitive and
+                    user-friendly, providing immediate feedback to enhance password security. This project aims to
+                    promote better password practices and improve online security for users.</p><br>
+                <button onclick="myProject4()">Visit</button>
+            </figure>
+            <figure class="col" data-item="project_5"><img src="asset/project_5.png" alt="Project 5">
+                <br>
+                <h1>Clock</h1><br>
+                <p>I created a Digital Clock using HTML, CSS, and JavaScript to display the current time in a sleek and
+                    modern design. This clock updates in real-time, showing hours, minutes, and seconds with smooth
+                    transitions. The interface is styled to be visually appealing, with customizable colors and fonts,
+                    making it a great addition to any web page. The JavaScript code ensures accurate timekeeping, while
+                    the CSS adds a touch of elegance and responsiveness. This project combines functionality and
+                    aesthetics, offering a practical tool that enhances the user experience.</p> <br>
+                <button onclick="myProject5()">Visit</button>
+            </figure>
+            <!-- <figure class="col" data-item="project_6"><img src="asset/project_6.png" alt="Project 6"
+                    onclick="myProject6()"></figure> -->
+            <figure class="col" data-item="project_6"><img src="asset/project_7.png" alt="Project 7">
+                <br>
+                <h1>Age Calculator</h1><br>
+                <p>I created an Age Calculator using HTML, CSS, and JavaScript that allows users to input their
+                    birthdate and instantly see their exact age in years, months, and days. The user-friendly interface
+                    features a sleek design, with a date picker for easy birthdate selection and a button to trigger the
+                    calculation. JavaScript handles the age computation, ensuring precise results down to the day. CSS
+                    adds visual appeal with smooth animations and a modern layout. This project showcases how HTML
+                    provides structure, CSS enhances aesthetics, and JavaScript brings interactivity, resulting in a
+                    practical and engaging tool for calculating age.</p><br>
+                <button onclick="myProject7()">Visit</button>
+            </figure>
+            <figure class="col" data-item="project_6"><img src="asset/project_8.png" alt="Project 8">
+                <br>
+                <h1>Fuel Cost Calculator</h1><br>
+                <p>I created a Fuel Cost Calculator using HTML, CSS, and JavaScript that helps users estimate the total
+                    cost of a trip based on distance, fuel efficiency, and fuel cost. The user-friendly form allows you
+                    to input the distance traveled, the vehicle's fuel efficiency, and the current fuel price. Upon
+                    submission, the JavaScript logic calculates the total fuel needed and the corresponding cost,
+                    displaying the result instantly. CSS adds a clean and responsive design, making the interface
+                    intuitive and visually appealing. This project demonstrates how HTML provides structure, CSS
+                    enhances aesthetics, and JavaScript enables dynamic, real-time calculations.</p><br>
+                <button onclick="myProject8()">Visit</button>
+            </figure>
+        </div>
+    </section>
+
+  
+    <section class="container review_contianer" id="review"></section>
+    <section class="contact container">
+        <div class="row">
+            <div class="col email-contact">
+                <p class="sub-heading">contact us</p>
+                <h2 class="heading-two">let's start a project <br> drop a main here</h2>
+                <form action="https://formspree.io/f/mqazkogr" method="post">
+                    <input type="email" name="email" id="email" placeholder="ex@gmail.com">
+                    <button class="btn">send</button>
+                </form>
+          
+            </div>
+            <div class="social-contact col">
+                <h3 class="heading-three">follow me</h3>
+                <div class="social-icon">
+                    <a href="https://wa.link/562kv6" target="_parent"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/jot_2287/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/jagjotsingh7935" target="_parent"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jagjot-singh-5799ba224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_parent"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+   
+    </section>
+    <!-- footer  -->
+    <footer class="contianer">
+        &#169; 2024 Jagjot Singh | All Rights Reserved
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
